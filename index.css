@@ -1301,4 +1301,9 @@ input:focus ~ .highlight {
   -webkit-transform: rotate(135deg);
   transform: rotate(135deg);
 }
+
+.hmIcons {
+  font-size: 2rem;
+  color: white;
+}
 /*# sourceMappingURL=index.css.map */
