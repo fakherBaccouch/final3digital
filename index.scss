@@ -879,9 +879,12 @@ input:focus ~ .highlight {
   font-size: 2em;
   color: #fff;
   cursor: pointer;
+  z-index: 2 !important;
 }
 
 .post-slider .prev {
+  z-index: 2 !important;
+
   position: absolute;
   top: 50%;
   left: 30px;
