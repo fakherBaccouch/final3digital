@@ -1,353 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Candal|Lora"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Candal|Lora" rel="stylesheet">
+    <!-- Custom Styling -->
+    <link rel="stylesheet" href="index.css" />
 
-  <!-- Custom Styling -->
-  <link rel="stylesheet" href="index.css" />
-
-  <title>3digital</title>
-</head>
-
-<body>
-  
-  <header>
-    <div class="container">
-      <nav id="lol" class="nav">
-        
-        <div onclick="hamburger()" class="hamburger">
-          <div class="hamburgerOne"></div>
-          <div class="hamburgerTwo"></div>
-          <div class="hamburgerThree"></div>
+    <title>3digital</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav id="lol" class="nav">
+          <div onclick="hamburger()" class="hamburger">
+            <div class="hamburgerOne"></div>
+            <div class="hamburgerTwo"></div>
+            <div class="hamburgerThree"></div>
+          </div>
+          <a href="index.html" class="logo"
+            ><img src="./images/loading.png"
+          /></a>
+          <ul class="nav-list">
+            <li>
+              <a href="index.html" onclick="closeNav()" class="nav-link"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="index.html#services"
+                onclick="closeNav()"
+                class="nav-link"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="index.html#carousel"
+                onclick="closeNav()"
+                class="nav-link"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a href="index.html#faq" onclick="closeNav()" class="nav-link"
+                >Faq</a
+              >
+            </li>
+            <li>
+              <a
+                href="index.html#contactus"
+                onclick="closeNav()"
+                class="nav-link"
+                >Contact us</a
+              >
+            </li>
+          </ul>
+          <a href="#" id="nav-cta">EN</a>
+        </nav>
+      </div>
+    </header>
+    <section class="header">
+      <div id="scroll" style="cursor: pointer" class="icon-scroll"></div>
+    </section>
+    <section></section>
+    <section id="services" class="services">
+      <h1 class="section_title">OUR SERVICES</h1>
+      <div class="services_content">
+        <div class="services_content_block">
+          <div class="services_content_block_image">
+            <img class="dimg" src="./images/3d-model.png" />
+          </div>
+          <div class="services_content_block_title">3D VIEWER</div>
+          <div class="services_content_block_text">
+            Add more configurable options to your 3D model ,empowering users to
+            explore different versions or even customize the product to their
+            particular preferences.
+          </div>
         </div>
-        
-       
-        <a href="index.html" class="logo"
-          ><img src="./images/loading.png"
-        /></a>
-        <ul class="nav-list">
-          <li>
-            <a href="index.html" onclick="closeNav()" class="nav-link">Home</a>
-          </li>
-          <li>
-            <a href="index.html#services" onclick="closeNav()" class="nav-link">Services</a>
-          </li>
-          <li>
-            <a href="index.html#carousel"  onclick="closeNav()" class="nav-link">Portfolio</a>
-          </li>
-          <li>
-            <a href="index.html#faq" onclick="closeNav()" class="nav-link">Faq</a>
-          </li>
-          <li>
-            <a href="index.html#contactus" onclick="closeNav()" class="nav-link">Contact us</a>
-          </li>
-        </ul>
-        <a href="#" id="nav-cta">EN</a>
-      </nav>
+        <div class="services_content_block">
+          <div class="services_content_block_image">
+            <img class="dimg" src="./images/ar.png" />
+          </div>
+          <div class="services_content_block_title">3D AUGMENTED REALITY</div>
+          <div class="services_content_block_text">
+            Add more configurable options Add more configurable options Add more
+            configurable options Add more configurable options to your 3D model
+            ,empowering users to explore different versions or even customize
+            the product to their particular preferences.
+          </div>
+        </div>
+        <div class="services_content_block">
+          <div class="services_content_block_image">
+            <img class="dimg" src="./images/3dconf.png" />
+          </div>
+          <div class="services_content_block_title">3D CONFIGURATOR</div>
+          <div class="services_content_block_text">
+            Add more configurable options to your 3D model ,empowering users to
+            explore different versions or even customize the product to their
+            particular preferences.
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+
+        <div class="modal-content_sceen"><h1>Three js scene here</h1></div>
+        <div class="modal-content_description"><h1>Text description</h1></div>
+      </div>
     </div>
-  </header>
-  <section class="header">
-    <div id="scroll" style="cursor: pointer;" class="icon-scroll"></div>
-  </section>
-  <section></section>
-  <section id="services" class="services">
-    <h1 class="section_title">OUR SERVICES</h1>
-    <div class="services_content">
-      <div class="services_content_block">
-        <div class="services_content_block_image">
-          <img class="dimg" src="./images/3d-model.png" />
-        </div>
-        <div class="services_content_block_title">3D VIEWER</div>
-        <div class="services_content_block_text">
-          Add more configurable options to your 3D model ,empowering users to
-          explore different versions or even customize the product to their
-          particular preferences.
-        </div>
-      </div>
-      <div class="services_content_block">
-        <div class="services_content_block_image">
-          <img class="dimg" src="./images/ar.png" />
-        </div>
-        <div class="services_content_block_title">3D AUGMENTED REALITY</div>
-        <div class="services_content_block_text">
-          Add more configurable options Add more configurable options Add more
-          configurable options Add more configurable options to your 3D model
-          ,empowering users to explore different versions or even customize
-          the product to their particular preferences.
-        </div>
-      </div>
-      <div class="services_content_block">
-        <div class="services_content_block_image">
-          <img class="dimg" src="./images/3dconf.png" />
-        </div>
-        <div class="services_content_block_title">3D CONFIGURATOR</div>
-        <div class="services_content_block_text">
-          Add more configurable options to your 3D model ,empowering users to
-          explore different versions or even customize the product to their
-          particular preferences.
-        </div>
-      </div>
-    </div>
-  </section>
-  <div id="myModal" class="modal">
+    <div class="carousel">
+      <!-- <div class="filter"><ul> <li>All</li> <li>Fashion</li> <li>Sport</li> <li>Accessories</li>  </ul></div> -->
 
-    <div class="modal-content">
-      <span class="close">&times;</span>
+      <div class="post-slider">
+        <i class="fas fa-chevron-left prev"></i>
+        <i class="fas fa-chevron-right next"></i>
 
-    <div class="modal-content_sceen"> <h1>Three js scene here</h1> </div>
-    <div class="modal-content_description"> <h1>Text description</h1></div>
-
-    </div>
-  
-  </div>
-  <div class="carousel">
-    <!-- <div class="filter"><ul> <li>All</li> <li>Fashion</li> <li>Sport</li> <li>Accessories</li>  </ul></div> -->
-
-  <div class="post-slider ">
-
-
-
-
-
-    <i class="fas fa-chevron-left prev"></i>
-    <i class="fas fa-chevron-right next"></i>
-
-    <div class="post-wrapper">
-
-
-      <div class="post">
-        <img class="post_img" src="images/png.png">
-        <h2 class="post_h2">Apple watch serie 6 </h2>
-        <p class="post_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-        </p>
-        <button  class="post_button myBtn">click lol</button>
-      </div>
-      <div class="post">
-        <img class="post_img" src="images/png.png">
-        <h2 class="post_h2">Apple watch serie 6 </h2>
-        <p class="post_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-        </p>
-        <button  class="post_button myBtn">click me</button>
-      </div>
-      <div class="post">
-        <img class="post_img" src="images/png.png">
-        <h2 class="post_h2">Apple watch serie 6 </h2>
-        <p class="post_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-        </p>
-        <button  class="post_button myBtn">click me</button>
-      </div>
-      <div class="post">
-        <img class="post_img" src="images/png.png">
-        <h2 class="post_h2">Apple watch serie 6 </h2>
-        <p class="post_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-        </p>
-        <button  class="post_button myBtn">click me</button>
-      </div>
-
-      
-      
-
-    </div>
-
-      
-
-    </div>
-
-  </div>
-
-
-  <section id="faq" class="faq">
-    <h1 class="section_title">Frequently Asked Questions(FAQ)</h1>
-    <img class="inter" src="./images/interogation.png" />
-    <div class="faq_content">
-      <div class="faq_content_q">
-        <div class="faq_content_q_q">Q</div>
-        <div class="faq_content_q_text">
-          <div class="faq_content_q_text_plus"><img class="plusicon" src="./images/plusplus.png"/></div>
-          What's the name of your first domestic animal ?
-        </div>
-      </div>
-      <div class="faq_content_a">
-        <div class="faq_content_a_a">A</div>
-        <div class="faq_content_a_text">
-          What's the name of your first domestic animal
+        <div class="post-wrapper">
+          <div class="post">
+            <img class="post_img" src="images/png.png" />
+            <h2 class="post_h2">Apple watch serie 6</h2>
+            <p class="post_p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam
+            </p>
+            <button class="post_button myBtn">click me</button>
+          </div>
+          <div class="post">
+            <img class="post_img" src="images/png.png" />
+            <h2 class="post_h2">Apple watch serie 6</h2>
+            <p class="post_p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam
+            </p>
+            <button class="post_button myBtn">click me</button>
+          </div>
+          <div class="post">
+            <img class="post_img" src="images/png.png" />
+            <h2 class="post_h2">Apple watch serie 6</h2>
+            <p class="post_p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam
+            </p>
+            <button class="post_button myBtn">click me</button>
+          </div>
+          <div class="post">
+            <img class="post_img" src="images/png.png" />
+            <h2 class="post_h2">Apple watch serie 6</h2>
+            <p class="post_p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam
+            </p>
+            <button class="post_button myBtn">click me</button>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="faq_content">
-      <div class="faq_content_q">
-        <div class="faq_content_q_q">Q</div>
-        <div class="faq_content_q_text">
-          <div class="faq_content_q_text_plus"><img class="plusicon" src="./images/plusplus.png"/></div>
-          What's the name of your first domestic animal ?
+    <section id="faq" class="faq">
+      <h1 class="section_title">Frequently Asked Questions(FAQ)</h1>
+      <img class="inter" src="./images/interogation.png" />
+      <div class="faq_content">
+        <div class="faq_content_q">
+          <div class="faq_content_q_q">Q</div>
+          <div class="faq_content_q_text">
+            <div class="faq_content_q_text_plus">
+              <img class="plusicon" src="./images/plusplus.png" />
+            </div>
+            What's the name of your first domestic animal ?
+          </div>
+        </div>
+        <div class="faq_content_a">
+          <div class="faq_content_a_a">A</div>
+          <div class="faq_content_a_text">
+            What's the name of your first domestic animal
+          </div>
         </div>
       </div>
-      <div class="faq_content_a">
-        <div class="faq_content_a_a">A</div>
-        <div class="faq_content_a_text">
-          What's the name of your first domestic animal
+
+      <div class="faq_content">
+        <div class="faq_content_q">
+          <div class="faq_content_q_q">Q</div>
+          <div class="faq_content_q_text">
+            <div class="faq_content_q_text_plus">
+              <img class="plusicon" src="./images/plusplus.png" />
+            </div>
+            What's the name of your first domestic animal ?
+          </div>
+        </div>
+        <div class="faq_content_a">
+          <div class="faq_content_a_a">A</div>
+          <div class="faq_content_a_text">
+            What's the name of your first domestic animal
+          </div>
         </div>
       </div>
-    </div>
-    <div class="faq_content">
-      <div class="faq_content_q">
-        <div class="faq_content_q_q">Q</div>
-        <div class="faq_content_q_text">
-          <div class="faq_content_q_text_plus"><img class="plusicon" src="./images/plusplus.png"/></div>
-          What's the name of your first domestic animal ?
+      <div class="faq_content">
+        <div class="faq_content_q">
+          <div class="faq_content_q_q">Q</div>
+          <div class="faq_content_q_text">
+            <div class="faq_content_q_text_plus">
+              <img class="plusicon" src="./images/plusplus.png" />
+            </div>
+            What's the name of your first domestic animal ?
+          </div>
+        </div>
+        <div class="faq_content_a">
+          <div class="faq_content_a_a">A</div>
+          <div class="faq_content_a_text">
+            What's the name of your first domestic animal
+          </div>
         </div>
       </div>
-      <div class="faq_content_a">
-        <div class="faq_content_a_a">A</div>
-        <div class="faq_content_a_text">
-          What's the name of your first domestic animal
+      <div class="faq_content">
+        <div class="faq_content_q">
+          <div class="faq_content_q_q">Q</div>
+          <div class="faq_content_q_text">
+            <div class="faq_content_q_text_plus">
+              <img class="plusicon" src="./images/plusplus.png" />
+            </div>
+            What's the name of your first domestic animal ?
+          </div>
+        </div>
+        <div class="faq_content_a">
+          <div class="faq_content_a_a">A</div>
+          <div class="faq_content_a_text">
+            What's the name of your first domestic animal
+          </div>
         </div>
       </div>
-    </div>
-    <div class="faq_content">
-      <div class="faq_content_q">
-        <div class="faq_content_q_q">Q</div>
-        <div class="faq_content_q_text">
-          <div class="faq_content_q_text_plus"><img class="plusicon" src="./images/plusplus.png"/></div>
-          What's the name of your first domestic animal ?
+    </section>
+    <section class="ourclients">
+      <h1 class="ourclients_title">Our clients</h1>
+
+      <div class="ourclients_gallery">
+        <img class="imgBrand" src="./images/brand1.png" />
+        <img class="imgBrand" src="./images/brand2.png" />
+        <img class="imgBrand" src="./images/brand3.png" />
+        <img class="imgBrand" src="./images/brand4.png" />
+        <img class="imgBrand" src="./images/brand5.png" />
+      </div>
+    </section>
+    <section id="contactus" class="contactus">
+      <div class="contactus_bg"></div>
+      <div class="contactus_form">
+        <h1>Contact us</h1>
+        <h3>Send us a message</h3>
+        <form>
+          <div class="group">
+            <input type="text" required />
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Name</label>
+          </div>
+          <div class="group">
+            <input type="text" required />
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Phone</label>
+          </div>
+          <div class="group">
+            <input type="email" required />
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>E-mail</label>
+          </div>
+        </form>
+
+         
+        <button>Submit</button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer_top">
+        <div class="footer_top_block">
+          <img class="footer_top_block_img" src="./images/loading.png" />
+          <p class="footer_top_block_text">
+            Legal name: Threedium Ltd Legal address: 119 Marylebone Rd NW1 5PU,
+            London UK
+          </p>
+        </div>
+        <div class="footer_top_block">
+          <ul>
+            <li>Home</li>
+
+            <li>Feature</li>
+            <li>Showcase</li>
+            <li>Prcing</li>
+          </ul>
+        </div>
+        <div class="footer_top_block">
+          <ul>
+            <li>About</li>
+            <li>Careers</li>
+            <li>Contact us</li>
+            <li>Blog</li>
+            <li>Platform login</li>
+            <li>Term of use</li>
+            <li>Privacy policy</li>
+          </ul>
+        </div>
+        <div class="footer_top_block">
+          <ul>
+            <li>Tutorials</li>
+            <li>Faqs</li>
+            <li>Developer documentation</li>
+            <li>Api documentation</li>
+            <li>3D documentation</li>
+          </ul>
+        </div>
+        <div class="footer_top_block">
+          <ul>
+            <li>Get in touch</li>
+            <li>23020527998</li>
+            <li>Developer@email.com</li>
+            <li>Social media icons</li>
+          </ul>
         </div>
       </div>
-      <div class="faq_content_a">
-        <div class="faq_content_a_a">A</div>
-        <div class="faq_content_a_text">
-          What's the name of your first domestic animal
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="ourclients">
-    <h1 class="ourclients_title">Our clients</h1>
-
-    <div class="ourclients_gallery">
-      <img class="imgBrand" src="./images/brand1.png" />
-      <img class="imgBrand" src="./images/brand2.png" />
-      <img class="imgBrand" src="./images/brand3.png" />
-      <img class="imgBrand" src="./images/brand4.png" />
-      <img class="imgBrand" src="./images/brand5.png" />
-    </div>
-  </section>
-  <section id='contactus' class="contactus">
-
-
-<div class="contactus_bg"></div>
-<div class="contactus_form">
-<h1> Contact us </h1>
-<h3>Send us a message</h3>
-<form>
-
-
-<div class="group">      
-  <input type="text" required>
-  <span class="highlight"></span>
-  <span class="bar"></span>
-  <label>Name</label>
-</div>
-<div class="group">      
-  <input type="text" required>
-  <span class="highlight"></span>
-  <span class="bar"></span>
-  <label>Phone</label>
-</div>
-<div class="group">      
-  <input type="email" required>
-  <span class="highlight"></span>
-  <span class="bar"></span>
-  <label>E-mail</label>
-</div>
-
-</form>
-
-
- 
-<button>Submit</button>
-
-</div>
-
-
-
-</section>
-
-
-  <footer class="footer">
-    <div class="footer_top">
-      <div class="footer_top_block">
-        <img class="footer_top_block_img" src="./images/loading.png" />
-        <p class="footer_top_block_text">
-          Legal name: Threedium Ltd Legal address: 119 Marylebone Rd NW1 5PU,
-          London UK
-        </p>
-      </div>
-      <div class="footer_top_block">
-        <ul>
-          <li>Home</li>
-
-          <li>Feature</li>
-          <li>Showcase</li>
-          <li>Prcing</li>
-        </ul>
-      </div>
-      <div class="footer_top_block">
-        <ul>
-          <li>About</li>
-          <li>Careers</li>
-          <li>Contact us</li>
-          <li>Blog</li>
-          <li>Platform login</li>
-          <li>Term of use</li>
-          <li>Privacy policy</li>
-        </ul>
-      </div>
-      <div class="footer_top_block">
-        <ul>
-          <li>Tutorials</li>
-          <li>Faqs</li>
-          <li>Developer documentation</li>
-          <li>Api documentation</li>
-          <li>3D documentation</li>
-        </ul>
-      </div>
-      <div class="footer_top_block">
-        <ul>
-          <li>Get in touch</li>
-          <li>23020527998</li>
-          <li>Developer@email.com</li>
-          <li>Social media icons</li>
-        </ul>
-      </div>
-    </div>
-  </footer>
+    </footer>
     <!-- Post Slider -->
     <!-- // Post Slider -->
 
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+    <!-- Slick Carousel -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
 
-  <!-- JQuery -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-  <!-- Slick Carousel -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-  <!-- Custom Script -->
-  <script src="js/scripts.js"></script>
-
-</body>
-
+    <!-- Custom Script -->
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
 <script>
   var faq = document.getElementsByClassName("faq_content_q");
@@ -379,7 +388,6 @@
     var x = document.getElementById("close");
 
     if (test == false) {
-
       myNav.classList.add("show");
       myNav.classList.remove("hide");
 
@@ -388,56 +396,53 @@
       myNav.classList.add("hide");
       myNav.classList.remove("show");
 
-
       test = false;
     }
     console.log(test);
   };
-  const closeNav = () =>{
+  const closeNav = () => {
     var myNav = document.getElementById("lol");
 
     myNav.classList.add("hide");
     myNav.classList.remove("show");
+  };
+  var targetElm = document.getElementById("services"), // reference to scroll target
+    scroll = document.getElementById("scroll"); // button that triggers the scroll
 
+  // bind "click" event to a button
+  scroll.addEventListener("click", function () {
+    targetElm.scrollIntoView();
+  });
+
+  $(document).ready(function () {
+    $("#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4").click(function () {
+      $(this).toggleClass("open");
+    });
+  });
+  var modal = document.getElementById("myModal");
+
+  // Get the button that opens the modal
+  var btn = document.getElementsByClassName("myBtn");
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks the button, open the modal
+
+  for (var i = 0; i < btn.length; i++) {
+    btn[i].onclick = function () {
+      modal.style.display = "block";
+    };
   }
-  var targetElm = document.getElementById('services'),  // reference to scroll target
-    scroll = document.getElementById('scroll');        // button that triggers the scroll
-  
-// bind "click" event to a button 
-scroll.addEventListener('click', function(){
-   targetElm.scrollIntoView()
-})
-
-$(document).ready(function(){
-	$('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
-		$(this).toggleClass('open');
-	});
-});
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementsByClassName("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-
-for (var i = 0; i < btn.length; i++) {
-btn[i].onclick = function() {
-  modal.style.display = "block";
-}
-
-}
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function () {
     modal.style.display = "none";
-  }
-}
+  };
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  };
 </script>
