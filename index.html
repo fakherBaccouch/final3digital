@@ -28,10 +28,12 @@
     <header>
       <div class="container">
         <nav id="lol" class="nav">
-          <div onclick="hamburger()" class="hamburger">
-            <div class="hamburgerOne"></div>
-            <div class="hamburgerTwo"></div>
-            <div class="hamburgerThree"></div>
+          <div id="openHamburger" onclick="hamburger()" class="hamburger">
+            <i  class="fas fa-bars hmIcons"></i>
+          </div>
+          <div id="closeHamburger" onclick="hamburger()" class="hamburger">
+            <i  class="fas fa-times hmIcons"></i>
+
           </div>
           <a href="index.html" class="logo"
             ><img src="./images/loading.png"
@@ -127,8 +129,8 @@
         <div class="modal-content_description"><h1>Text description</h1></div>
       </div>
     </div>
-    <div class="carousel">
-      <!-- <div class="filter"><ul> <li>All</li> <li>Fashion</li> <li>Sport</li> <li>Accessories</li>  </ul></div> -->
+    <div id="carousel" class="carousel">
+      <div class="filter"><ul> <li>All</li> <li>Fashion</li> <li>Sport</li> <li>Accessories</li>  </ul></div>
 
       <div class="post-slider">
         <i class="fas fa-chevron-left prev"></i>
@@ -386,17 +388,25 @@
   const hamburger = () => {
     var myNav = document.getElementById("lol");
     var x = document.getElementById("close");
+    var close = document.getElementById("closeHamburger");
+    var open = document.getElementById("openHamburger");
 
     if (test == false) {
       myNav.classList.add("show");
       myNav.classList.remove("hide");
 
       test = true;
-    } else if (test == true) {
+      open.style.display= 'none'
+      close.style.display= 'block'
+
+        } else if (test == true) {
       myNav.classList.add("hide");
       myNav.classList.remove("show");
 
       test = false;
+      open.style.display= 'block'
+      close.style.display= 'none'
+
     }
     console.log(test);
   };
